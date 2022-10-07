@@ -1,0 +1,380 @@
+/* title banner */
+
+#menu-banner {
+    height: 100vh;
+    justify-content: center;
+    background-image: url("../assets/menu-banner.jpg");
+    background-size: cover;
+    margin: 0;
+    background-position: center;
+    font-size: 100px;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+/* promotions picture gallery */
+
+#promo-cont {
+    position: relative;
+    height: 450px;
+    width: 100%;
+    overflow-x: hidden;
+    transition: all .5s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#promotions {
+    position: relative;
+    height: 400px;
+}
+
+.promo-card {
+    height: 300px;
+    width: 500px;
+    background-color: white;
+    border-radius: 45px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: auto;
+    bottom: 0;
+    margin: auto 0;
+    transition: 1s;
+    transform-origin: left center;
+}
+
+.active {
+    transform: scale(1);
+    filter: brightness(100%);
+}
+
+.right {
+    transform: scale(.8);
+    filter:brightness(50%);
+}
+
+.left {
+    transform: scale(.8);
+    filter:brightness(50%);
+}
+
+#promo1 {
+    background-image: url("../assets/promo1.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#promo2 {
+    background-image: url("../assets/promo2.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#promo3 {
+    background-image: url("../assets/promo3.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#tabs-cont {
+    width: 100%;
+    justify-content: center;
+}
+
+.tabs {
+    height: 8px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 8px;
+    margin: 16px;
+    margin-top: 0;
+    transition: all .5s ease-out;
+    filter: opacity(50%);
+}
+
+.active-tab {
+    background-color: black;
+}
+
+/* content */
+
+#content {
+    display: grid;
+    grid-template-columns: 300px 1fr; 
+    padding: 50px 0;
+    margin-bottom: 50px;
+    width: 100%;
+    background-color: black;
+}
+
+/* sidebar */
+
+#menu {
+    padding-top: 100px;
+}
+
+.choice {
+    background-color: black;
+    border-radius: 15px;
+    padding: 16px 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    width: 200px;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+    border: #FFEE6D 3px solid;
+    box-shadow: 0 0 5px red, 
+                inset 0 0 5px red;
+}
+
+.choice-active {
+    border: crimson 3px solid;
+    box-shadow: 0 0 5px red, 
+                inset 0 0 5px red;
+}
+
+/* menu content */
+
+/* per menu atur displaynya */
+
+#light-bites {
+    display: block;
+}
+
+#main-course {
+    display: none;
+}
+
+#drinks {
+    display: none;
+}
+
+#desserts {
+    display: none;
+}
+
+.foods {
+    padding-right: 30px;
+}
+
+.category {
+    transition: all .5s ease;
+}
+
+.categ-cont {
+    position: relative;
+}
+
+.categ-title {
+    text-align:center;
+    text-shadow: 2px 2px 5px lightgray;
+    transition: all .5s ease;
+    margin: 32px 0;
+}
+
+.food-card {
+    border-radius: 35px;
+    width: 90%;
+    padding: 35px;
+    background-color: black;
+    margin: 20px 0;
+    border: #FFEE6D 3px solid;
+    box-shadow: 0 0 15px red, 
+                inset 0 0 15px red;
+}
+
+.foods > .food-card:nth-child(1) {
+    margin-top: 0;
+}
+
+.food-image > img {
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    transition: all .8s ease-out;
+}
+
+.food-image {
+    display: inline-block;
+}
+
+.food-name, .food-desc {
+    padding: 0;
+    margin: 0;
+}
+
+.food-name {
+    font-size: 50px;
+}
+
+.food-desc {
+    font-size: 16px;
+}
+
+.food-price > p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.food-details {
+    padding-left: 30px;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.order {
+    margin-left: auto;
+    padding: 15px 25px;
+    background-color: crimson;
+    border-radius: 15px;
+    box-shadow: 0 0 10px crimson, 
+                inset 0 0 10px red;
+}
+
+.order:hover {
+    cursor: pointer;
+}
+
+.order > p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 969px) {
+    #menu-banner {
+        font-size: 50px;
+        height: 70vh;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu {
+        flex-direction: row;
+        padding-top: 0;
+        padding-bottom: 50px;
+        justify-content: space-evenly;
+    }
+
+    .choice {
+        margin: 0 4px;
+        font-size: 12px;
+    }
+
+    .categ-title {
+        font-size: 40px;
+    }
+
+    .foods {
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .food-image > img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .food-card {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .food-name {
+        font-size: 35px;
+    }
+
+    .food-desc {
+        font-size: 12px;
+    }
+
+    .food-price > p {
+        font-size: 16px;
+    }
+
+    .food-details {
+        width: 250px;
+    }
+
+    .order {
+        padding: 10px 15px;
+    }
+
+    .order > p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:460px) {
+    #promo-cont {
+        height: 300px;
+    }
+
+    #promotions {
+        height: 250px;
+    }
+
+    .promo-card {
+        width: 100%;
+        border-radius: 0;
+        height: 200px;
+    }
+
+    .choice {
+        margin: 0 4px;
+        font-size: 12px;
+    }
+
+    .food-card {
+        padding: 16px;
+    }
+
+    .food-details {
+        padding-left: 16px;
+        margin: 16px 0;
+    }
+    
+    .food-image {
+        display: none;
+    }
+
+    .food-image > img {
+        width: 0;
+        height: 0;
+    } 
+
+    .food-card {
+        margin: 10px;
+        padding: 16px;
+    }
+
+    .food-name {
+        font-size: 27px;
+    }
+
+    .food-desc {
+        font-size: 12px;
+    }
+
+    .food-price > p {
+        font-size: 12px;
+    }
+
+    .order {
+        margin: 0 auto;
+        padding: 10px 80px;
+    }
+
+    .order > p {
+        font-size: 14px;
+    }
+}

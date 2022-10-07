@@ -1,0 +1,172 @@
+body {
+  background-color: black;
+}
+
+#banner {
+  background-image: url("../assets/Neon.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: white;
+  align-items: center;
+}
+
+.title{
+  font-size: 100px;
+  text-align: center;
+}
+
+.subtitle{
+  font-size: 25px;
+  text-align: center;
+}
+
+.container {
+  width: 50%;
+  margin:0 auto;
+  border-radius: 5px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+#title > h1 {
+  text-align: center;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+#title > p {
+  text-align: center;
+}
+
+input[type=text], select, textarea, input[type=email]{
+  font-family: pop-regular;  
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+h1 {
+  font-family: pop-bold;
+  color: white;
+  font-size: 4em;
+  text-shadow: 2px 2px 5px gray;
+}
+
+label,p {
+  font-family: pop-regular;
+  color: white;
+  text-shadow: 2px 2px 5px gray;
+}
+
+#cb-cont {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#btn-cont{
+  text-align: center;
+}
+
+#nonbinary {
+  margin-bottom: 16px;
+}
+
+#message {
+  height:200px;
+}
+
+#btn-submit {
+  border: 2px solid #4CAF50;
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  margin: 0 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px 5px gray;
+}
+
+#btn-reset {
+  border: 2px solid #4CAF50;
+  padding: 10px 20px;
+  margin: 0 16px;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px 5px gray;
+}
+
+#cb-offer {
+  margin-bottom: 15px;
+}
+
+#q-header {
+  font-family: pop-regular;
+  font-size: 14px;
+}
+
+#quote {
+  padding: 100px 80px;
+  text-align: center;
+  justify-content: center;
+  background-color: #f8f4e4;
+}
+
+#q-content {
+  font-size: 60px;
+  font-family: pop-medium;
+  padding: 50px;
+  padding-bottom: 70px;
+}
+
+@media only screen and (max-width: 969px) {
+  #banner {
+    height: 70vh;
+  }
+
+  #banner-text {
+    height: 80vh;
+  }
+
+  .container {
+    width: 85%;
+    padding-top: 20px;
+  }
+
+  .title{
+    font-size: 62px;
+  }
+
+  .subtitle{
+    font-size: 15px;
+  }
+
+  #q-content {
+    font-size: 26px;
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+
+  #foot-cont {
+    position: static;
+    padding-top: 101px;
+  }
+}
