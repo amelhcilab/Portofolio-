@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="./assets/icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/all.css">
+    <link rel="stylesheet" href="./styles/header-footer.css">
+    <link rel="stylesheet" href="./styles/contact-us.css">
+    <script src="./scripts/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <img src="./assets/logo-header.png" alt="" id="icon" class="img-animate">
+    </div>
+    <div id="menu-bar">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div id="drop-down">
+        <div id="dd-flex">
+            <a class="text-animate" href="index.html">Home</a>
+            <a class="text-animate" href="menu.html">Menu</a>
+            <a class="text-animate" href="location.html">Location</a>
+            <a class="text-animate" id="more" href="#">More</a>
+            <div class="flex-col more-nonactive" id="dd-more">
+                <a class="text-animate" href="about-us.html">About Us</a>
+                <a class="text-animate" href="contact-us.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <!-- banner -->
+    <div id="banner" class="text-animate">
+        <div id="banner-text" class="text-animate">
+            <div class="title">Contact Us</div>
+            <div class="subtitle">Tell us about your dining experience and what needs to be improved.</div>
+        </div>
+    </div>
+    <!-- form -->
+    <div class="container"> 
+        <form name="contactForm" action="#" method="post">
+            <!-- name -->
+            <label for="name">Name</label>
+            <input type="text" placeholder="Full Name" name="name" id="name">
+            <!-- email -->
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter Your Email" id="email" name="email">
+            <!-- gender -->
+            <label for="gender">Gender</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <input type="radio" id="nonbinary" name="gender" value="nonbinary">
+                    <label for="nonbinary">Non-Binary</label>
+                </div>
+            <!-- branch location -->
+            <label for="branch">Branch Location</label>
+            <select id="branch">
+                <option value="" disabled selected>--Not Specified--</option>
+                <option value="senayan-jkt">DanBam Senayan Jakarta</option>
+                <option value="paragon-jkt">DanBam Paragon Jakarta</option>
+                <option value="ta-jkt">DanBam Taman Anggrek Jakarta</option>
+                <option value="gi-jkt">DanBam Grand Indonesia Jakarta</option>
+                <option value="dp-smg">DanBam DP Mall Semarang</option>
+                <option value="tp-sby">DanBam Tunjungan Plaza Surabaya</option>
+                <option value="sv-bali">DanBam Seminyak Village Bali</option>
+            </select>
+            <!-- message for danbam -->
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+            <!-- checkbox -->
+            <div id="cb-cont">
+                <input type="checkbox" id="cb-offer" name="offer">
+                <label for="offer">I want to receive exclusive offers, news, and updates via email.</label>
+            </div>
+            <!-- buttons -->
+            <div id="btn-cont">
+                <input type="reset" id="btn-reset" value="Reset">
+                <input type="button" id="btn-submit" value="Submit" onclick=validateForm()>
+            </div>
+        </form>
+    </div>
+    <!-- quotes -->
+    <div id="quote">
+        <div id="q-header">DANBAM</div>
+        <div id="q-content" class="text-animate">
+            The most unhappy customers are our greatest source of learning.
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="foot-cont">
+        <div id="footer" class="flex-col flex-center">
+            <div id="foot-up" class="flex-row flex-center">
+                <a target="_blank" href="https://www.instagram.com" class="sosmed subtitle">Instagram</a>
+                <a target="_blank" href="https://www.twitter.com" class="sosmed subtitle">Twitter</a>
+                <a target="_blank" href="https://www.facebook.com" class="sosmed subtitle">Facebook</a>
+            </div>
+            <div id="foot-bottom" class="text-animate">
+                <p>&copy 2021 DanBam Indonesia. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./scripts/all.js"></script>
+<script src="./scripts/form-validation.js"></script>
+</html>
